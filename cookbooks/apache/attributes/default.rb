@@ -2,6 +2,9 @@ default["apache"]["sites"]["imagetoon-gmail-com2"] = { "site_title" => "imagetoo
 default["apache"]["sites"]["imagetoon-gmail-com2b"] = { "site_title" => "imagetoon2b websites coming soon", "port" => 80, "domain" => "imagetoon-gmail-com2b.mylabserver.com" }
 default["apache"]["sites"]["imagetoon-gmail-com3"] = { "site_title" => "imagetoon3 website", "port" => 80, "domain" => "imagetoon-gmail-com3.mylabserver.com" }
 
+default["author"]["name"] = "imagetoon"
+
+
 case node["platform"]
 when "centos"
 	default["apache"]["package"] = "httpd"
